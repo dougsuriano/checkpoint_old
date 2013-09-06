@@ -1,0 +1,48 @@
+#leftColumn {
+    float:left;
+    width:25%;
+}
+
+#rightColumn {
+    float:left;
+    width:75%;
+}
+
+#racerNumberField {
+    font-size:48px;
+    width:150px;
+}
+
+#progress {
+    display:none;
+}
+
+#count {
+    text-align:center;
+    width:200px;
+    height:100px;
+    position:fixed;
+    bottom:0;
+    left:0;
+}
+
+#count h3 {
+    line-height:5px;
+}
+
+#count h1 {
+    line-height:5px;
+}
+
+#racerList {
+    overflow:scroll;
+    height:300px;
+}
+
+.backgroundOrange {
+    background-color:#FFCC66;
+}
+
+.backgroundGreen {
+    background-color:#99FF99;
+}

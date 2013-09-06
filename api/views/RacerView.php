@@ -1,0 +1,59 @@
+<?php
+/******************************************************************************
+RacerView.php
+Copyright (C) 2013  Doug Suriano & Matt Savoia
+
+This file is part of Checkpoint - Race Management System
+
+Checkpoint is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 2 of the License, or
+(at your option) any later version.
+
+Checkpoint is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Checkpoint.  If not, see <http://www.gnu.org/licenses/>.
+
+RacerView
+Racer View
+/******************************************************************************/
+
+require_once('BaseView.php');
+class RacerView extends BaseView {
+    
+    public $racers;
+    
+    public function generate() {
+        parent::generate();
+        $output = array();
+        foreach ($this->racers as $racer) {
+            array_push($output, $this->serialize($racer));
+        }
+        echo json_encode($output);
+    }
+    
+    public function serialize($object) {
+        $retval = array(
+            'id'                => $object->id,
+            'racerNumber'       => $object->racerNumber,
+            'firstName'         => $object->firstName,
+            'lastName'          => $object->lastName,
+            'nickName'          => $object->nickName,
+            'city'              => $object->city,
+            'country'           => $object->country,
+            'imageUri'          => $object->imageUri,
+            'category'          => $object->category,
+            'sex'               => $object->sex,
+            'bikeType'          => $object->bikeType,
+            'paid'              => $object->paid
+            
+        );
+        return $retval;
+    }
+}
+
+?>

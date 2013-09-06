@@ -1,0 +1,60 @@
+#leftColumn {
+    float:left;
+    width:150px;
+}
+
+#rightColumn {
+    float:left;
+    width:80%;
+}
+
+#racerNumberField {
+    font-size:48px;
+    width:125px;
+}
+
+#progress {
+    display:none;
+}
+
+td {
+    font-size:12px;
+}
+
+#editContainer {
+    width:800px;
+    height:500px;
+}
+
+#editLeft {
+    width:50%;
+    height:80%;
+    float:left;
+}
+#editRight {
+    width:50%;
+    height:80%;
+    float:left;
+}
+
+#editBottomLeft {
+    margin: 0 auto;
+    width:50%;
+    height:20%;
+    float:left;
+}
+
+#editBottomRight {
+    margin: 0 auto;
+    width:50%;
+    height:20%;
+    float:left;
+}
+
+.backgroundOrange {
+    background-color:#FFCC66;
+}
+
+.backgroundGreen {
+    background-color:#99FF99;
+}
